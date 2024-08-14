@@ -1,0 +1,272 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(2, 13, 66);
+}
+
+.main-container .heading {
+    font-size: xx-large;
+    margin-bottom: 10px;
+    color: white;
+    text-shadow: 2px 2px 5px rgb(34, 255, 0);
+    /* filter: drop-shadow(30%); */
+}
+
+@media all and (max-width:450px) {
+    .main-container .heading {
+        font-size: 30px;
+    }
+}
+@media all and (max-width:350px) {
+    .main-container .heading {
+        font-size: 23px;
+    }
+}
+@media all and (max-width:310px) {
+    .main-container .heading {
+        font-size: 20px;
+    }
+}
+
+.password-display {
+    border: 1px solid whitesmoke;
+    width: 25rem;
+    height: 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px;
+    background-color: rgb(255, 255, 255, .5);
+    box-shadow: 2px 2px 3px whitesmoke;
+    /* filter: drop-shadow(30%); */
+
+}
+
+@media all and (max-width:450px) {
+    .password-display {
+        width: 20rem;
+    }
+}
+@media all and (max-width:350px) {
+    .password-display {
+        width: 17rem;
+        height: 2.5rem;
+    }
+}
+@media all and (max-width:310px) {
+    .password-display {
+        width: 14rem;
+        height: 2rem;
+    }
+}
+
+.display {
+    width: 80%;
+    height: 80%;
+    font-size: 20px;
+    margin: 5px;
+    outline: none;
+    border: none;
+    background: transparent;
+}
+
+.copy-data {
+    background: transparent;
+    border: none;
+    width: 10%;
+    height: 70%;
+    font-size: 20px;
+    margin: 4px;
+    background-image: url('copy.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    /* z-index: 1000; */
+}
+
+.copy-data:hover {
+    cursor: pointer;
+}
+
+.copy-data i {
+    opacity: 0;
+    position: absolute;
+    transform: scale(0);
+    transition: all 20ms ease-in-out;
+
+
+}
+
+.copy-data i.active {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.password-setting {
+    border: 1px solid whitesmoke;
+    background-color: rgb(255, 255, 255, .5);
+    border-radius: 5px;
+    width: 25rem;
+    height: 25rem;
+    margin: 5px;
+    box-shadow: 2px 2px 2px whitesmoke;
+}
+@media all and (max-width:450px) {
+    .password-setting {
+        width: 20rem;
+    }
+}
+@media all and (max-width:350px) {
+    .password-setting {
+        width: 17rem;
+        height: 22rem;
+    }
+}
+@media all and (max-width:310px) {
+    .password-setting {
+        width: 14rem;
+        height: 22rem;
+    }
+}
+
+.length-container {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 10px;
+}
+
+.slider {
+    width: 24rem;
+    /* outline:2px solid green; */
+    height: 2rem;
+}
+@media all and (max-width:450px) {
+    .slider {
+        width: 19rem;
+    }
+}
+@media all and (max-width:350px) {
+    .slider {
+        width: 16rem;
+    }
+}
+@media all and (max-width:310px) {
+    .slider {
+        width: 13rem;
+    }
+}
+
+.slider::-webkit-slider-thumb {
+    font-size: 3rem;
+}
+
+/* .slider:focus{
+    outline: 2px solid yellow;
+} */
+
+.check {
+    /* border:2px solid rebeccapurple; */
+    margin: 5px;
+    font-weight: bold;
+}
+/* @media all and (max-width:350px) {
+    .check{
+        
+    }
+} */
+.check input {
+    margin: 5px;
+    width: 1.5rem;
+    height: 1.5rem;
+}
+@media all and (max-width:350px) {
+    .check input{
+        width: 1rem;
+        height: 1rem;
+    }
+}
+.check label {
+    font-size: 20px;
+}
+@media all and (max-width:350px) {
+    .check label{
+       font-size: 15px;
+    }
+}
+@media all and (max-width:310px) {
+    .check label{
+       font-size: 12px;
+    }
+}
+.strength-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 25px 10px;
+    font-weight: bold;
+}
+
+.generate-btn {
+    display: flex;
+    justify-content: center;
+    height: 50px;
+}
+@media all and (max-width:350px) {
+    .generate-btn{
+        height: 40px;
+    }
+}
+@media all and (max-width:350px) {
+    .generate-btn{
+        height: 35px;
+    }
+}
+
+.generate-button {
+    border: none;
+    width: 90%;
+    height: 100%;
+    font-size: 20px;
+    font-weight: bolder;
+    border-radius: 10px;
+    filter: drop-shadow(2px 2px 2px blue);
+    box-shadow: 0px 0px 15px 2px whitesmoke;
+    transition: all 1s ease;
+    background-color: rgb(84, 230, 71);
+    
+    &:hover {
+        cursor: pointer;
+        background-color: rgb(16, 132, 5);
+    }
+}
+@media all and (max-width:350px) {
+    .generate-button{
+        font-size: 17px;
+    }
+}
+@media all and (max-width:350px) {
+    .generate-button{
+        font-size: 15px;
+    }
+}
+
+
+.data-indicator {
+    /* border: 3px solid gold; */
+    z-index: 100;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}

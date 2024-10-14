@@ -198,16 +198,16 @@
     }
 }
 .check label {
-    font-size: 20px;
+    font-size: 15px;
 }
 @media all and (max-width:350px) {
     .check label{
-       font-size: 15px;
+       font-size: 12px;
     }
 }
 @media all and (max-width:310px) {
     .check label{
-       font-size: 12px;
+       font-size: 10px;
     }
 }
 .strength-container {
